@@ -1,7 +1,5 @@
 {
-  "name": "Antigua Production",
-  "type": "custom",
-  "integrations": {
-  	"cordova": {}
-  }
+  "name": "photo-gallery",
+  "integrations": {},
+  "type": "angular"
 }
