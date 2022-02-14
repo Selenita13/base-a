@@ -1,5 +1,13 @@
 {
-  "name": "photo-gallery",
-  "integrations": {},
-  "type": "angular"
+  "name": "icca-test",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
 }
