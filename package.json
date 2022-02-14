@@ -1,0 +1,40 @@
+{
+  "name": "com.carneantigua.app",
+  "version": "1.0.0",
+  "description": "Antigua Production",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Upgrade DI",
+  "license": "ISC",
+  "dependencies": {
+    "cordova-android": "9.1.0"
+  },
+  "devDependencies": {
+    "cordova-plugin-cookiemaster": "~1.0.5",
+    "cordova-plugin-device": "~2.0.3",
+    "cordova-plugin-dialogs": "~2.0.2",
+    "cordova-plugin-inappbrowser": "~4.0.0",
+    "cordova-plugin-network-information": "~2.0.2",
+    "cordova-plugin-splashscreen": "~6.0.0",
+    "cordova-plugin-statusbar": "~2.4.3",
+    "cordova-plugin-whitelist": "~1.2.1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-cookiemaster": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "com.cordova.plugins.cookiemaster": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+<hook type="before_plugin_install" src="scripts/beforeInstall.js" />
+<hook type="after_build" src="scripts/afterBuild.js" />
+
+<platform name="android">
+    <hook type="before_plugin_install" src="scripts/androidBeforeInstall.js" />
+    <hook type="before_build" src="scripts/androidBeforeBuild.js" />
+    ...
+</platform>

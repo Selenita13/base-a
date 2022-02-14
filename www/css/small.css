@@ -1,0 +1,39 @@
+/* small  pantallas chicas*/
+
+
+	.segment--material {
+		width: 260px !important;
+		margin: 0 15px !important;
+	}
+
+	.sub-texture{
+  		margin-left: 20px;
+	}
+
+
+	h3 {
+		font-size: 16px;
+	}
+
+	label{
+		font-size: 14px;
+	}
+
+
+
+	.unit{
+		font-size: 1.0em;
+	}
+
+
+	.logout_btn {
+    	margin-left: 0px;
+    }
+
+.head-sbt h1 {
+    font-size: 1.3em;
+}
+
+nav.double_menu_container ul li img.img-done {
+    margin: 26px 0px 0px 0px !important;
+}

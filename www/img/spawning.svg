@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Spawning</title>
+    <g id="App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="a)-Record-Selection-Copy" transform="translate(-98.000000, -377.000000)">
+            <g id="Spawning" transform="translate(102.000000, 379.000000)">
+                <g id="Asset-3">
+                    <path d="M53.31,26.65 C53.0287477,12.130054 41.1776696,0.506309016 26.655,0.506309016 C12.1323304,0.506309016 0.281252261,12.130054 0,26.65 C0,27.21 0,27.77 0.06,28.32 L53.25,28.32 C53.28,27.77 53.31,27.21 53.31,26.65 Z" id="Path" fill="#EFB257" fill-rule="nonzero"></path>
+                    <path d="M26.65,53.31 C39.848988,53.3007192 51.0543155,43.6347954 53,30.58 L0.29,30.58 C2.23624595,43.638545 13.447218,53.3056692 26.65,53.31 L26.65,53.31 Z" id="Path" fill="#EFB257" fill-rule="nonzero"></path>
+                    <path d="M0.06,28.32 C0.06,29.08 0.18,29.83 0.29,30.58 L53,30.58 C53.11,29.83 53.18,29.08 53.23,28.32 L0.06,28.32 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="10.49" cy="35.71" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="18.57" cy="35.71" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="26.65" cy="35.71" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="34.74" cy="35.71" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="42.82" cy="35.71" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="14.53" cy="41.02" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="22.61" cy="41.02" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="30.69" cy="41.02" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="38.78" cy="41.02" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="18.57" cy="46.12" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="26.65" cy="46.12" r="2.41"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="34.74" cy="46.12" r="2.41"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

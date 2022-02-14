@@ -1,0 +1,7 @@
+{
+  "name": "Antigua Production",
+  "type": "custom",
+  "integrations": {
+  	"cordova": {}
+  }
+}

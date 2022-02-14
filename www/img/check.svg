@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Check</title>
+    <defs>
+        <path d="M7,0.0769230769 C3.17846154,0.0769230769 0.0769230769,3.17846154 0.0769230769,7 C0.0769230769,10.8215385 3.17846154,13.9230769 7,13.9230769 C10.8215385,13.9230769 13.9230769,10.8215385 13.9230769,7 C13.9230769,3.17846154 10.8215385,0.0769230769 7,0.0769230769 L7,0.0769230769 Z M5.61538462,10.4615385 L2.15384615,7 L3.13,6.02384615 L5.61538462,8.50230769 L10.87,3.24769231 L11.8461538,4.23076923 L5.61538462,10.4615385 L5.61538462,10.4615385 Z" id="path-1"></path>
+    </defs>
+    <g id="App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="a)-Record-Selection" transform="translate(-326.000000, -315.000000)">
+            <g id="Pago" transform="translate(41.000000, 298.000000)">
+                <g id="Check" transform="translate(285.000000, 17.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Shape" fill="#000000" xlink:href="#path-1"></use>
+                    <g id="Color/A" mask="url(#mask-2)" fill="#515151">
+                        <g transform="translate(-3.000000, -3.000000)" id="Color/F-P">
+                            <rect x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

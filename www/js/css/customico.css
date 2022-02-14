@@ -1,0 +1,35 @@
+
+.custom-ico{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 19%;
+      height: 92%;
+  }
+  .custom-ico.active{
+    border-bottom: 2px solid #005A84;
+    opacity: 1
+  }
+    .custom-ico.p1{background-image: url(../img/icons/pi.svg);}
+   
+    .custom-ico.p2{background-image: url(../img/icons/pii.svg);}
+
+    .custom-ico.logout{background-image: url(../img/icons/logout.svg);}
+
+    .custom-ico.form{background-image: url(../img/icons/form.svg);}
+
+
+    .custom-ico.checklist{background-image: url(../img/icons/checklist.svg);}
+
+    .custom-ico.done{background-image: url(../img/icons/done.svg);}
+
+
+/*iconos de parametros*/
+    .custom-ico.casing_p{background-image: url(../img/icons/casing_p.svg);}
+    .custom-ico.fbreak_p{background-image: url(../img/icons/fbreak_p.svg);}
+    .custom-ico.pii_p{background-image: url(../img/icons/pii_p.svg);}
+    .custom-ico.sbreak_p{background-image: url(../img/icons/sbreak_p.svg);}
+    .custom-ico.spawning_p{background-image: url(../img/icons/spawning_p.svg);}
+    .custom-ico.tbreak_p{background-image: url(../img/icons/tbreak_p.svg);}
+    
+
+

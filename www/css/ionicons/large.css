@@ -1,0 +1,2283 @@
+/* - - - - - - - - - - - - - - -
+CSS principal
+Desarrollado por: Upgrade Diseño Interactivo
+Para:
+Fecha:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+/* ====== F O N T S ====== */
+@font-face {
+    font-family: 'Gotham-Bold';
+    src:url('../../_fonts/Gotham Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src:url('../../_fonts/Gotham Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src:url('../../_fonts/Gotham-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-BlackItalic';
+    src:url('../../_fonts/Gotham-BlackItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src:url('../../_fonts/Gotham-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-BoldItalic';
+    src:url('../../_fonts/Gotham-BoldItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Book-i';
+    src:url('../../_fonts/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-BookItalic';
+    src:url('../../_fonts/Gotham-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src:url('../../_fonts/Gotham-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-LightItalic';
+    src:url('../../_fonts/Gotham-LightItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src:url('../../_fonts/Gotham-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-MediumItalic';
+    src:url('../../_fonts/Gotham-MediumItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Thin';
+    src:url('../../_fonts/Gotham-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-ThinItalic';
+    src:url('../../_fonts/Gotham-ThinItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Ultra';
+    src:url('../../_fonts/Gotham-Ultra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-UltraItalic';
+    src:url('../../_fonts/Gotham-UltraItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-XLight';
+    src:url('../../_fonts/Gotham-XLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-XLightItalic';
+    src:url('../../_fonts/Gotham-XLightItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgb(241, 65, 127);
+}
+
+#citys-diarys{
+    border-radius: 5px;
+    border: 0;
+    width: 232px;
+    height: 40px;
+    font-weight: bold;
+    color: rgb(241,65,127);
+    outline: none;
+    background: url(../../_images/icons/row-select.png) no-repeat 99.5% center;
+    background-position-x: 95%;
+    background-size: 5%;
+    padding: 0px 8px;
+    font-size: 1em;
+    -webkit-appearance: unset;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham-Book-i';
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sec3-conv1 img, .sec3-conv2 img{
+    width: 188px;
+    height: auto;
+    display: inline-block;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ====== F O N T S (end) ====== */
+
+/*Eliminamos márgenes del "body" */
+html, body{ margin:0px; padding:0px; height:100%; }
+
+#big-container /* Div que va a manterner el "footer" siempre al fondo */
+{
+    min-height:100% !important;
+    background-color: rgb(241,241,241);
+}
+
+#menu,#menu2, #menu3, #menu4{
+    display: none;
+}
+
+/* GENERAL */
+
+a { text-decoration: none; }
+
+/* HEADER */
+
+header{
+    height: 70px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 95%;
+    z-index: 99;
+    top: 0;
+}
+
+#more-white-i{
+    display: none;
+}
+
+.owl-back-room-d{
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-find{
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    background-color: white;
+    height: 30px;
+    right: -10000px;
+    position: absolute;
+    transition: .8s;
+    padding: 5px 5px 5px 15px;
+}
+
+.form-find.form-find-active{
+    right: 0;
+    transition: .8s;
+}
+
+.form-find input{
+    height: 20px;
+    width: 90%;
+    border: 0;
+    outline: none;
+    font-size: 1em;
+}
+
+#close-form-find{
+    width: 10px;
+    margin: 5px 5px auto auto;
+    cursor: pointer;
+}
+
+.form-find button{
+    background-color: rgba(255,255,255,0);
+    border: 0;
+    text-decoration: underline;
+    color: rgb(241,65,127);
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#logo2, #logo{
+	width: 200px;
+}
+
+#finder,#finder2,#finder3,#finder4{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+#finder2,#finder3{
+	display: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.nav-header, .nav-header2{
+	width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-header a{
+	color: white;
+	font-size: 1.2em;
+    font-family: 'Gotham-Book-i';
+}
+
+.nav-header2 a{
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Gotham-Book-i';
+}
+
+.nav-header a:hover{
+    color: rgb(241,65,127);
+    transition: .8s;
+}
+
+.nav-header2 a:hover{
+    color: rgb(241,65,127);
+    transition: .8s;
+}
+
+.header-down{
+	background-color: white;
+    box-shadow: 2px 2px 50px 3px rgb(154, 150, 150);
+    transition: .3s;
+    z-index: 100;
+}
+
+#logo{
+	display: none;
+}
+
+.font-nav-style{
+	color: black !important;
+	transition: .3s;
+}
+
+/* INDEX */
+.section1-i{
+    height: 750px;
+    min-height: 500px;
+    position: relative;
+}
+.divLazyMargin{
+
+}
+.background-index-slider{
+    height: 100%;
+    background-image: url(../../_images/backgrounds/principal.jpg);
+    margin-top: 8px;
+    background-position: center;
+    width: 100%;
+    height: 750px;
+}
+
+.info-sec1-i{
+	width: 50%;
+    flex-direction: column;
+    display: flex;
+    margin: 130px 200px 100px 200px;
+    position: absolute;
+    top: 0;
+    text-align: left;
+}
+
+.info-sec1-i h1{
+	font-size: 4em;
+    color: white;
+    font-family: 'Gotham-Bold';
+}
+
+.info-sec1-i p{
+	font-size: 1.5em;
+    color: white;
+    font-family: 'Gotham-Book';
+}
+.info-sec1-i >a{
+	color: white;
+    background-color: rgb(241,65,127);
+    width: 220px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1.3em;
+    font-family: 'Gotham-Light';
+}
+
+.tri-info-sec1-i{
+	display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.tri-info-sec1-i >a{
+	color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 230px;
+    font-family: 'Gotham-Light';
+}
+
+.section2-i{
+	height: 600px;
+	background-color: rgb(241,241,241);
+	position: relative;
+}
+
+.subsect2-1{
+	width: 1500px;
+    background-color: white;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -90px;
+}
+
+.loader1{
+	height: 9px;
+    background-color: rgb(241,65,127);
+    width: 50%;
+}
+
+.loader2{
+    height: 9px;
+    background-color: rgb(241,65,127);
+    width: 100%;
+}
+
+.head-subsec-info>span{
+	height: 3px;
+    width: 80px;
+    background-color: rgb(232, 137, 170);
+}
+
+.subsect2-1>h4{
+	margin: 80px 150px 30px 150px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    font-family: 'Gotham-Bold';
+}
+
+.subsect2-1>h2{
+	font-size: 2.3em;
+    margin: 0px 30px;
+}
+
+.head-subsec-info{
+	display: flex;
+    align-items: center;
+    margin: 20px 150px 20px 150px;
+    justify-content: flex-start;
+}
+
+.head-subsec-info>h2{
+	margin: 0px 20px;
+    font-family: 'Gotham-Medium';
+}
+
+.items-subsec-info{
+	display: flex;
+    height: auto;
+    margin: 50px 70px 70px 70px;
+   	justify-content: space-evenly;
+}
+
+.item-subsec-i{
+	height: 300px;
+    width: 33%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-subsec-i>a{
+	/*color: rgb(241,65,127);*/
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    font-family: 'Gotham-Book-i';
+}
+
+.item-subsec-i>a>img{
+	margin: 0px 10px;
+}
+
+.item-data-i{
+	display: flex;
+    flex-direction: column;
+}
+
+.pink-hover{
+	background-color: rgb(241,65,127);
+	transition: .8s;
+}
+
+.item-data-i>h4{
+	color: rgb(232, 137, 170);
+    font-size: 1.5em;
+    margin: 0px 0px 20px 0px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Gotham-Bold';
+}
+
+.item-subsec-i h2{
+    color: black;
+    font-family: 'Gotham-Bold';
+}
+
+.item-subsec-i h4{
+    font-family: 'Gotham-XLight';
+}
+
+.item-data-i>span{
+	height: 2.5px;
+    width: 65px;
+    background-color: rgb(232, 137, 170);
+}
+
+.section3-i{
+    height: auto;
+    background-color: rgb(241,241,241);
+    padding: 0px 280px;
+    margin: 70px 0px;
+}
+
+.section3-i h4{
+    margin: 0;
+    font-family: 'Gotham-Bold';
+    text-transform: uppercase;
+}
+
+.head-subsec-info2 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+    justify-content: flex-start;
+}
+
+.head-subsec-info2>span{
+    height: 3px;
+    width: 80px;
+    background-color: rgb(232, 137, 170);
+}
+
+.head-subsec-info2>h2{
+    margin: 0px 20px;
+    font-family: 'Gotham-Medium';
+}
+
+.sec3-conv1{
+    display: flex;
+    height: 230px;
+    background-color: white;
+    margin: 30px 0px;
+    width: 1250px;
+}
+
+.sec3-conv2{
+    display: inline-flex;
+    height: 239px;
+    background-color: white;
+    width: auto;
+    margin: 30px 0px 30px auto;
+}
+
+.back-logo{
+    width: 250px;
+    height: 100%;
+}
+
+.back-conv{
+    width: 191px;
+    height: auto;
+    background-size: cover;
+}
+
+#conv-image-1{
+    background-image: url(../../_images/conv1.png);
+}
+
+#conv-image-2{
+    background-image: url(../../_images/conv2.png);
+}
+
+#conv1-img{
+    background-image: url(../../_images/conv1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#conv2-img{
+    background-image: url(../../_images/conv2.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+}
+
+
+/* FOOTER */
+
+#footer_cut { padding-top:50px; clear:both; }
+
+footer{
+		margin-top: -50px;
+		height: 300px;
+		background-color: rgb(40,42,43);
+		display: flex;
+    	justify-content: space-evenly;
+    	align-items: center;
+}
+
+.cont-footer{
+	width: 400px;
+    height: auto;
+}
+
+#subcont-foot1{
+	display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+#subcont-foot1 > a{
+	color: white;
+	width: 50%;
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Gotham-Book-i';
+}
+
+#subcont-foot2{
+	min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#subcont-foot2>div{
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#subcont-foot2 a{
+	color: rgb(95, 98, 99);
+    font-family: 'Gotham-Book-i';
+}
+
+#subcont-foot3{
+	display: flex;
+	flex-direction: column;
+}
+
+#subcont-foot3 h3{
+	color: white;
+    border-bottom: 1px solid white;
+    margin: 0;
+    padding: 20px 0px;
+    font-family: 'Gotham-Bold';
+}
+
+.mails-footer{
+	display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+#subcont-foot3 p,#subcont-foot3 a{
+	color: white;
+	line-height: 1.5;
+    font-family: 'Gotham-Book-i';
+}
+
+.logos-index{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.logos-index img{
+    margin: 0px 30px;
+    object-fit: contain;
+}
+
+/*INICIO DE NOSOTROS */
+.section1-ab{
+    height: auto;
+    background-image: url(../../_images/backgrounds/principal.jpg);
+    padding: 130px 200px 100px 200px;
+    min-height: 500px;
+    margin: 7px;
+}
+
+.info-sec1-ab h1{
+    font-size: 4em;
+    color: white;
+    font-family: 'Gotham-Bold';
+    width: 40%;
+}
+
+.info-sec1-ab p{
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Gotham-Book';
+}
+.info-sec1-ab >a{
+    color: white;
+    background-color: rgb(241,65,127);
+    width: 220px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1.3em;
+    font-family: 'Gotham-Light';
+}
+
+.section2-ab{
+    width: 950px;
+    background-color: white;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -90px;
+}
+
+.section2-ab {
+    height: auto;
+    background-color: rgb(241,241,241);
+    position: relative;
+    min-height: 500px;
+}
+
+.subsect2-1-ab{
+    width: 950px;
+    background-color: white;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -90px;
+}
+
+.head-subsec-info {
+    display: flex;
+    align-items: center;
+    margin: 20px 100px 20px 100px;
+    justify-content: flex-start;
+}
+
+.subsect2-1-ab>h4{
+    margin: 80px 110px 30px 110px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-family: 'Gotham-Bold';
+}
+
+.subsect2-1-ab>h2{
+    font-size: 2.3em;
+    margin: 0px 30px;
+}
+
+.sec-info-about{
+    padding: 0px 100px 50px 100px;
+}
+
+.item-inf-about{
+    display: block;
+}
+
+.item-inf-about h5{
+    color: rgb(255,58,155);
+    font-family: 'Gotham-Book-i';
+}
+
+.item-inf-about p{
+    font-family: 'Gotham-Book';
+}
+
+.section3-ab{
+    height: auto;
+    width: 950px;
+    margin: 0 auto 50px auto;
+}
+
+.section3-ab h4{
+    margin: 0px 100px;
+    font-family: 'Gotham-Bold';
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.head-subsec-info2-ab {
+    display: flex;
+    align-items: center;
+    margin: 20px 110px 20px 110px;
+    justify-content: flex-start;
+}
+
+.head-subsec-info2-ab>span {
+    height: 3px;
+    width: 80px;
+    background-color: rgb(232, 137, 170);
+}
+
+.head-subsec-info2-ab>h2 {
+    margin: 0px 20px;
+    font-family: 'Gotham-Medium';
+}
+
+.advances-ab{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.circle{
+     width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: white;
+}
+
+.adv-item-ab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+}
+
+.adv-item-ab h3{
+    text-align: center;
+    font-family: 'Gotham-Medium';
+}
+
+.adv-item-ab p{
+    text-align: center;
+    font-family: 'Gotham-Book-i';
+}
+/* FIN DE NOSOTROS */
+
+/* INICIO DE CONVOCATORIA */
+
+.section1-ann{
+    height: 100%;
+    background-image: url(../../_images/backgrounds/Principal-conv.jpg);
+    padding: 130px 200px 100px 200px;
+    min-height: 500px;
+    margin: 7px;
+    position: relative;
+}
+
+.info-sec1-ann h1 {
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Gotham-Bold';
+}
+
+.info-sec1-ann p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Gotham-Book';
+}
+
+/*.info-sec1-ann >a {
+    color: white;
+    background-color: rgb(241,65,127);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+}*/
+
+.info-sec1-ann{
+    width: 70%;
+    flex-direction: column;
+    display: flex;
+}
+
+.scroll-bottom{
+    background-color: rgb(241,65,127);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.scroll-bottom img{
+    width: 13px;
+}
+
+.festivals-ann{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.item-festival{
+    background-image: url(../../_images/backgrounds/festival.jpg);
+    height: 416px;
+    width: 270px;
+    background-size: cover;
+    margin: 20px 50px;
+}
+
+/* FIN DE CONVOCATORIA */
+
+/* INICIO DE CONVOCATORIA (DETALLE) */
+
+.section1-ann-d{
+    height: 100%;
+    /*background-image: url(../../_images/backgrounds/detalle-ann.jpg);*/
+    padding: 130px 200px 100px 200px;
+    min-height: 500px;
+    margin: 7px;
+    position: relative;
+    background-position: center !important;
+    background-repeat: no-repeat;
+}
+
+#requirement-ann li{
+    font-family: 'Gotham-Book-i';
+    font-size: 0.9em;
+}
+
+.info-sec1-ann-d h1 {
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Gotham-Bold';
+}
+
+.info-sec1-ann-d p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Gotham-Book';
+}
+
+.btn-return{
+    color: white;
+    background-color: rgb(241,65,127);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+}
+
+.info-sec1-ann-d{
+    width: 50%;
+}
+
+.btn-return{
+    background-color: inherit !important;
+    justify-content: space-evenly !important;
+    width: 150px !important;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.info-conv-det{
+    padding: 50px 100px 50px 100px;
+    height: auto;
+}
+
+.details1-conv-det{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.date-conv-det{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary-conv-det{
+    width: 40%;
+}
+
+.summary-conv-det p{
+    font-family: 'Gotham-Book-i';
+    line-height: 1.9;
+}
+
+.date-conv-det button, .date-conv-det a{
+    color: white;
+    background-color: rgb(241,65,127);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+    cursor: pointer;
+}
+
+.details2-conv-det >p >strong{
+    color: rgb(255,58,155);
+    font-family: 'Gotham-Book-i';
+}
+
+.details2-conv-det >p{
+    color: rgb(255,58,155);
+    font-family: 'Gotham-Book-i';
+    font-weight: 900;
+    color: black;
+    font-size: 0.9em;
+}
+
+/* FIN DE CONVOCATORIA */
+
+/* FIN DE AGENDAS */
+
+.section1-diarys{
+    background-color: rgb(241,241,241);
+    padding: 130px 100px 100px 100px;
+}
+
+.info-sec1-diarys h1{
+    font-size: 4em;
+    color: black;
+    font-family: 'Gotham-Bold';
+    width: 80%;
+}
+
+.info-sec1-diarys p{
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Gotham-Book';
+    width: 55%;
+}
+
+.diarys-items{
+    display: flex;
+    margin: 50px 0px;
+    overflow-x: scroll;
+}
+
+.diarys-item{
+    padding: 10px 20px;
+    margin: 0px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.travels-diarys-items h2{
+    font-family: 'Gotham-Bold';
+}
+
+.diarys-item >h4{
+    margin: 0;
+    font-family: 'Gotham-Book-i';
+    font-size: 0.9em;
+}
+
+.travels-diarys-items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.travel-diary-item{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+        margin-bottom: 20px;
+}
+
+.back-travel{
+    background-image: url(../../_images/backgrounds/travel.jpg);
+    height: 210px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.footer-travel{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.info-travel{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 220px;
+}
+
+.info-travel> h5{
+    font-family: 'Gotham-Book-i';
+    color: rgb(113, 113, 113);
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.footer-travel >h2{
+    margin: 0;
+    font-family: 'Gotham-Book-i';
+    width: 25%;
+    text-align: center;
+    padding: 0px 10px;
+    color: rgb(241,65,127);
+}
+
+.footer-travel >h2 span{
+    font-size: 1.3em;
+}
+
+.details-travel{
+    width: 70%;
+}
+
+.details-travel>h5{
+    margin: 0;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Gotham-Bold';
+    color: black;
+    text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 35px;
+}
+
+.info-to-detail{
+    display: flex;
+    align-items: center;
+}
+
+.info-to-detail h4{
+    font-family: 'Gotham-Book-i';
+    font-size: 0.7em;
+    margin: 8px 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: black;
+}
+
+.info-to-detail img{
+    width: 15px;
+    height: auto;
+    margin: 0px 10px;
+}
+
+.price-travel{
+    width: 75px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241,65,127);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.price-travel h5{
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.7em;
+    font-family: 'Gotham-Book-i';
+}
+/* FIN DE AGENDAS */
+
+/* INICIO DE RECINTOS CULTURALES */
+
+.section1-cul-pre{
+    background-color: rgb(241,241,241);
+    padding: 130px 100px 100px 100px;
+}
+
+.info-sec1-cul-pre h1{
+    font-size: 4em;
+    color: black;
+    font-family: 'Gotham-Bold';
+    width: 80%;
+}
+
+.info-sec1-cul-pre p{
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Gotham-Book';
+    width: 55%;
+}
+
+.section-precincts{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px 0px;
+}
+
+.precincts-item{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 30px 0px;
+}
+
+#prec1{
+    background-image: url(../../_images/backgrounds/culpre2.jpg);
+}
+
+#prec2{
+    background-image: url(../../_images/backgrounds/culpre2.jpg);
+}
+
+#prec3{
+    background-image: url(../../_images/backgrounds/culpre3.jpg);
+}
+
+#prec4{
+    background-image: url(../../_images/backgrounds/culpre4.jpg);
+}
+
+#prec5{
+    background-image: url(../../_images/backgrounds/culpre5.jpg);
+}
+
+#prec6{
+    background-image: url(../../_images/backgrounds/culpre6.jpg);
+}
+
+.back-precinct{
+    height: 245px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.info-precinct{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.info-precinct> h5{
+    font-family: 'Gotham-Book-i';
+    color: rgb(113, 113, 113);
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.details-precinct{
+    width: 100%;
+}
+
+.details-precinct>h5{
+    margin: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Gotham-Bold';
+    min-height: 60px;
+    color: black;
+}
+
+/* FIN DE RECINTOS CULTURALES */
+
+/* INICIO DE DETALLE DE RECINTO CULTURAL */
+
+.section1-precinct{
+    height: 100%;
+    /*background: linear-gradient(rgba(51, 51, 51, 0.74), rgba(47, 47, 47, 0.62)), url(../../_images/backgrounds/casa-redonda.jpg);*/
+    padding: 130px 200px 100px 200px;
+    min-height: 500px;
+    margin: 7px;
+    position: relative;
+    background-position: center !important;
+}
+
+.info-sec1-precinct h1 {
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Gotham-Bold';
+}
+
+.info-sec1-precinct p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Gotham-Book';
+}
+
+/*.info-sec1-precinct >a {
+    color: white;
+    background-color: rgb(241,65,127);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+}*/
+
+.info-sec1-precinct{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+}
+
+.info-detail-precinct{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 150px;
+}
+
+.info-detail-precinct p{
+    font-family: 'Gotham-Book-i';
+    line-height: 1.9;
+}
+
+.expositions-container-dp{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#map, #map-event, #map-ann, #map-cp{
+    height: 500px;
+    position: relative;
+}
+
+.info-address-pd{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 30%;
+    background-color: white;
+    left: 150px;
+    padding: 10px 0px;
+}
+
+.map-pd{
+    position: relative;
+}
+
+.title-info-map-pd{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -30px;
+}
+
+.title-info-map-pd span{
+    height: 3px;
+    width: 50px;
+    background-color: rgb(232, 137, 170);
+    margin: 0px 10px;
+}
+
+.title-info-map-pd h2{
+    font-family: 'Gotham-Bold';
+}
+
+.info-address-pd p{
+    font-family: 'Gotham-Book-i';
+    width: 70%;
+    line-height: 1.9;
+    margin: 0 auto;
+}
+
+.more-info-dp{
+    height: auto;
+    background-color: rgb(40,42,43);
+    border-bottom: 1px solid white;
+    padding: 100px 200px 0px 100px;
+    position: relative;
+}
+
+.more-info-dp >a{
+    color: white;
+    background-color: rgb(24,230,112);
+    padding: 10px 20px;
+    position: absolute;
+    font-family: 'Gotham-Light';
+    right: 150px;
+    top: -18px;
+}
+
+.head-subsec-info2-pd {
+    display: flex;
+    align-items: center;
+    margin: 20px 110px 20px 0px;
+    justify-content: flex-start;
+}
+
+.head-subsec-info2-pd>span {
+    height: 3px;
+    width: 80px;
+    background-color: rgb(232, 137, 170);
+}
+
+.head-subsec-info2-pd>h2 {
+    margin: 0px 20px;
+    font-family: 'Gotham-Medium';
+    color: white;
+}
+
+.item-more-dp{
+    width: 500px;
+    padding-left: 110px;
+    margin-bottom: 100px;
+}
+
+.item-more-dp p{
+    color: white;
+    margin: 20px 0px;
+    line-height: 1.7;
+    font-family: 'Gotham-Light';
+}
+
+.item-more-dp p span{
+    font-family: 'Gotham-Bold';
+    color: white;
+    margin-right: 10px;
+}
+
+/* FIN DE DETALLE DE RECINTO CULTURAL */
+
+/* INICIO DE SALA DE PRENSA */
+
+.section1-room{
+    background-color: rgb(241,241,241);
+    padding: 130px 100px 100px 100px;
+}
+
+.info-sec1-room{
+    display: flex;
+    align-items: center;
+}
+
+.info-sec1-room h1{
+    font-size: 4em;
+    color: black;
+    font-family: 'Gotham-Bold';
+    width: 80%;
+}
+
+.info-sec1-room p{
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Gotham-Book';
+    width: 55%;
+}
+
+.info-sec1-room select{
+    border-radius: 5px;
+    border: 0;
+    width: 232px;
+    height: 40px;
+    font-weight: bold;
+    color: rgb(241,65,127);
+    outline: none;
+    background: url(../../_images/icons/row-select.png) no-repeat 99.5% center;
+    background-position-x: 95%;
+    background-size: 5%;
+    padding: 0px 8px;
+    font-size: 1em;
+    -webkit-appearance: unset;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham-Book-i';
+}
+
+.items-room{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-room{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 15px 30px;
+}
+
+.sub-item-room1{
+    background-image: url(../../_images/backgrounds/room.jpg);
+    height: 245px;
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-item-room2{
+    background-color: white;
+    height: auto;
+    min-height: 300px;
+}
+
+.header-sub-i1-room2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header-sub-i1-room2 h4{
+    color: rgb(232, 137, 170);
+    font-size: 0.9em;
+    margin: 0px 0px 20px 0px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Gotham-Bold';
+}
+
+.header-sub-i1-room2 span{
+    height: 2.5px;
+    width: 65px;
+    background-color: rgb(232, 137, 170);
+}
+
+.header-sub-i2-room2{
+    padding: 20px;
+}
+
+.header-sub-i2-room2 h3{
+    color: black;
+    font-family: 'Gotham-Bold';
+    font-size: 1.2em;
+}
+
+.header-sub-i2-room2 p{
+    line-height: 1.5;
+    font-family: 'Gotham-Book-i';
+    font-size: 0.9em;
+    color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* FIN DE SALA DE PRENSA */
+
+/* INICIO DE SALA A DETALLE */
+
+.section1-room-detail{
+    height: 100%;
+    /*background-image: url(../../_images/backgrounds/detail-room.jpg);*/
+    padding: 130px 200px 100px 200px;
+    min-height: 500px;
+    margin: 7px;
+    position: relative;
+    background-position: center !important;
+}
+
+.info-sec1-room-detail h1 {
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Gotham-Bold';
+}
+
+.info-sec1-room-detail p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Gotham-Book';
+}
+
+/*.info-sec1-room-detail >a {
+    color: white;
+    background-color: rgb(241,65,127);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+}*/
+
+.info-sec1-room-detail{
+    width: 70%;
+    flex-direction: column;
+    display: flex;
+}
+
+.details2-room-detail{
+    margin: 100px 0px 50px 0px;
+}
+
+.details2-room-detail >p >strong {
+    color: rgb(255,58,155);
+    font-family: 'Gotham-Book-i';
+}
+
+.details2-room-detail >p {
+    color: rgb(255,58,155);
+    font-family: 'Gotham-Book-i';
+    font-weight: 900;
+    color: black;
+    font-size: 0.9em;
+    line-height: 2;
+}
+
+#container-room-info{
+    padding-bottom: 0 !important;
+}
+
+#owl-back1{
+    background-image: url(../../_images/backgrounds/slider1.jpg);
+    height: 300px;
+}
+
+#owl-back2{
+    background-image: url(../../_images/backgrounds/slider2.jpg);
+    height: 300px;
+}
+
+#owl-back3{
+    background-image: url(../../_images/backgrounds/slider1.jpg);
+    height: 300px;
+}
+
+#container-room-info2 {
+    padding: 0px;
+    margin-top: 0 !important;
+    margin: 0px;
+}
+
+#download-gall{
+    margin: 50px 0px;
+}
+
+#download-gall input{
+    color: white;
+    background-color: rgb(241,65,127);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+    cursor: pointer;
+    outline: none;
+}
+
+/* FIN DE SALA A DETALLE */
+
+/* INICIO DE CONTACTO */
+
+#map2{
+    width: 100%;
+    height: 700px;
+}
+
+.section1-contact{
+    height: 100%;
+    min-height: 500px;
+    margin: 7px;
+    position: relative;
+}
+
+.info-sec1-contact{
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+.style-title-conv{
+    font-family: 'Gotham-Book';
+    color: black;
+    font-size: 0.8em;
+    width: 270px;
+    margin: auto;
+    text-align: center;
+}
+
+.info-sec1-contact h1 {
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Gotham-Bold';
+}
+
+.info-sec1-contact p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Gotham-Book';
+}
+
+.info-sec1-contact >a {
+    color: white;
+    background-color: rgb(241,65,127);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+}
+
+.gmnoprint{
+    display: none;
+}
+
+.gm-control-active{
+    display: none;
+}
+
+.info-contact-sec{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 200px;
+    background-color: white;
+    left: 0px;
+}
+
+.info-contact-sec p{
+    font-family: 'Gotham-Book-i';
+    width: 70%;
+    line-height: 1.9;
+    margin: 0 auto;
+    color: black;
+}
+
+.section-form-contact{
+    height: 700px;
+    position: relative;
+}
+
+.form-contact{
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -70px;
+}
+
+.container-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 70px 0px 70px;
+}
+
+.input-style{
+    margin: 0px 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.input-style h5{
+    color: rgb(241, 65, 127);
+    font-size: 0.7em;
+    margin: 0px 0px 20px 0px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 7px 0px;
+    font-family: 'Gotham-Book-i';
+    letter-spacing: 2px;
+}
+
+.input-style input{
+    border: 0;
+    outline: none;
+    height: 30px;
+    font-family: 'Gotham-Book';
+    font-size: 1em;
+}
+
+.input-style textarea{
+    resize: none;
+    outline: none;
+    border: 0;
+    height: 100px;
+    font-family: 'Gotham-Book';
+    font-size: 1.2em;
+}
+
+.input-style input::placeholder{
+    font-family: 'Gotham-Book';
+    color: rgb(181,181,181);
+}
+
+.input-style textarea::placeholder{
+    font-family: 'Gotham-Book';
+    color: rgb(181,181,181);
+}
+
+.input-style span{
+    height: 2px;
+    width: 50%;
+    background-color: rgb(232, 137, 170);
+}
+
+.thanks-contact{
+    margin: 150px 0 0 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thanks-contact h2{
+    font-family: 'Gotham-Book-i';
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+.form-contact h3{
+    margin: 30px 70px;
+    font-family: 'Gotham-Book';
+}
+
+.form-contact button{
+    color: white;
+    background-color: rgb(24,230,112);
+    padding: 10px 30px;
+    position: absolute;
+    font-family: 'Gotham-Light';
+    bottom: -15px;
+    left: 70px;
+    font-size: 1.1em;
+}
+
+.cont-checkbox{
+    display: flex;
+    align-items: center;
+    margin: 0px 70px 50px 70px;
+    min-height: 70px;
+}
+
+.cont-checkbox input{
+    margin: 0px 10px;
+}
+
+.cont-checkbox h4{
+    margin: 0px 10px;
+    font-size: 0.9em;
+    font-family: 'Gotham-Book-i';
+}
+
+.info-contact-sec-cont{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.info-contact-sec-cont h5{
+    margin: 0;
+    font-family: 'Gotham-Book-i';
+    color: white;
+    font-size: 1.1em;
+}
+
+.info-contact-sec-cont a{
+    color: rgb(255,0,121);
+    font-size: 1.2em;
+    margin: 7px 0px;
+    letter-spacing: 3px;
+    font-family: 'Gotham-Bold';
+    letter-spacing: 0;
+}
+
+.more-details-cont{
+    display: flex;
+}
+
+.header-nav-menu{
+    display: none;
+}
+
+.header-nav-menu a:hover{
+    color: rgb(232, 137, 170);
+    transition: .8s;
+}
+
+.font-nav-style a:hover{
+    color: rgb(232, 137, 170);
+    transition: .8s;
+}
+
+.section3-i h4 {
+    margin: 0;
+    font-family: 'Gotham-Bold';
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.section3-i {
+    height: auto;
+    background-color: rgb(241,241,241);
+    padding: 0px 242px;
+    margin: 70px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec3-conv1 {
+    display: inline-flex;
+    height: 239px;
+    background-color: white;
+    margin: 30px auto 30px 0px;
+    width: auto;
+}
+
+.sec3-conv1 img, .sec3-conv2 img{
+    width: 188px;
+    height: auto;
+    display: inline-block;
+}
+
+.info-conv{
+    width: 700px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+.date-s3i, .date-s3i-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.date-s3i h5{
+    font-family: 'Gotham-Book-i';
+    text-align: right;
+    margin-right: 30px;
+}
+
+.date-s3i-2 h5{
+    font-family: 'Gotham-Book-i';
+    text-align: right;
+    margin-left: 30px;
+}
+
+.date-s3i a{
+    color: white;
+    background-color: rgb(24,232,112);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0px 0px auto;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+}
+
+.date-s3i-2 a{
+    color: white;
+    background-color: rgb(24,232,112);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 0px 0px;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+}
+
+.info-conv h5, .info-conv2 h5{
+    font-family: 'Gotham-Book-i';
+    text-align: right;
+    margin-right: 30px;
+}
+
+.info-conv h4{
+    margin-left: 35px;
+}
+
+.info-conv2 h4{
+    margin-left: 135px;
+}
+
+.info-conv2{
+    width: 700px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+.info-conv2 .more-info-conv{
+    padding-left: 0;
+}
+
+.more-info-conv{
+    display: flex;
+    height: 134px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.more-info-conv span{
+    height: 3px;
+    width: 60px;
+    background-color: rgb(232, 137, 170);
+    margin: 15px 12px;
+}
+
+.more-info-conv h2{
+    margin: 0;
+    font-family: 'Gotham-Medium';
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+
+.more-info-conv a{
+    color: white;
+    background-color: rgb(24,232,112);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0px 0px auto;
+    font-size: 1em;
+    font-family: 'Gotham-Light';
+}
+
+/* FIN DE CONTACTO */
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+
+/* Slider */
+
+.slider-wrapper{
+    position: relative;
+    width: 99%;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide img {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  zoom: 1;
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+.slick-slide img {
+  display: block;
+  max-width: 100%;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-slide > .slick-slider-img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.slick-slide .image {
+  /*height: 180px;*/
+}
+
+.slick-slide img {
+  display: block;
+  width: 700px;
+}
+
+.slick-slide img.slick-loading {
+  display: none;
+}
+
+/* progress bar */
+.slider-progress {
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    top: 0;
+}
+.slider-progress .progress {
+  width: 1%;
+  height: 9px;
+  background-color: rgb(241,65,127);
+}
+
+
+/********** para cambier de imagen **********/
+.slick-prev{
+display: none !important;
+}
+
+.slick-next{
+display: none !important;
+}

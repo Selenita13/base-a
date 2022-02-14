@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* - - - - - - - - - - - - - - -
+CSS Lib For UDI projects
+Created: 24-05-17
+Last Modified: Jorge Damian
+26-09-17
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+
+/* GENERAL ELEMENTS*/
+a{
+	text-decoration:none;
+	color:inherit;}
+input {
+    -webkit-appearance: none;
+}
+select{
+	-webkit-appearance: none;
+	}
+textarea{
+	resize:none;}
+/* CONTAINERS */
+
+.center_cont{
+	width:90%;
+	max-width:1250px;
+	margin:0 auto;
+	box-sizing:border-box;
+	}
+.col-50{
+	display:inline-block;
+	box-sizing:border-box;
+	min-width:300px;
+}
+	.col .col-50{
+		width:50%;
+		}
+.small-bann {
+    box-sizing: border-box;
+		display: block;
+		height: auto
+    min-height:200px;
+		width: 100%;
+
+}
+.medium-bann{
+		box-sizing: border-box;
+		display: block;
+		height: auto;
+    min-height:400px;
+		width: 100%;
+	}
+.large-bann{
+		box-sizing: border-box;
+		display: block;
+    height: auto;
+    min-height:600px;
+		width: 100%;
+	}
+
+.fullscreen-bann{
+		box-sizing: border-box;
+		display: block;
+    height:100vh;
+		width: 100%;
+	}
+
+	.banner-background--responsive{
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: contain;
+		height: 0px;
+		padding-bottom: 11.7%;
+		}
+/* CATALOG */
+.catalog{
+		align-items: center;
+		align-content: flex-start;
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	}
+	.item{
+		min-width:300px;
+		}
+
+/* STYLISTS */
+.outline{
+	border:1px solid #000000;
+	padding:1em;
+	}
+	.outline.white{
+		border-color:#FFFFFF;
+		}
+	.outline.rounded{
+		border-radius:10px;
+		}
+		.outline.rounded.white{
+			border-color:#FFFFFF;
+			}
+.centered{
+	text-align:center;}
+.centered-block{
+	display:block;
+	margin:0 auto;}
+	.relative{
+				position:relative;}
+			.absolut-control{
+				position:absolute;
+				transform:translate(-50%,-50%);}
+				.absolut-control.center{
+					left:50%;
+					margin:0;
+					top:50%;
+
+					}
+
+.pad1{
+	box-sizing:border-box;
+	padding:1em;
+	}
+.pad2{
+	box-sizing:border-box;
+	padding:2em;
+	}
+.pad3{
+	box-sizing:border-box;
+	padding:3em;
+	}
+
+hr.black{
+	border:1px solid #000000;
+	border-bottom:none;}
+
+ul.twocol{
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	}
+/* ANIMATION */
+.faded{
+	-moz-transition: 0.7s ease all;
+    -o-transition: 0.7s ease all;
+    -webkit-transition: 0.7s ease all;
+    transition: 0.7s ease all;}

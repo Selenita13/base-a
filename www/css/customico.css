@@ -1,0 +1,22 @@
+
+.custom-ico{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 15%;
+      height: 92%;
+  }
+  .custom-ico.active{
+    border-bottom: 2px solid #f48e30;
+    opacity: 1
+  }
+    .custom-ico.p1{background-image: url(../img/icons/pi.svg);}
+   
+   
+
+    .custom-ico.logout{background-image: url(../img/logout.svg);}
+
+
+    .custom-ico.checklist{background-image: url(../img/checklist.svg);}
+
+    .custom-ico.done{background-image: url(../img/icons/done.svg);}
+
